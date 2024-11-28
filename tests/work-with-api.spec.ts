@@ -11,11 +11,6 @@ test.beforeEach(async ({ page }) => {
     });
 
     await page.goto("https://conduit.bondaracademy.com");
-    // log in
-    await page.getByText(" Sign in ").click();
-    await page.getByRole("textbox", { name: "Email" }).fill("liza@test.com");
-    await page.getByRole("textbox", { name: "Password" }).fill("123456");
-    await page.getByRole("button").click();
 });
 
 test("mocking article throgh api", async ({ page }) => {
